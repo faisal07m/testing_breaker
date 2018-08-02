@@ -1,0 +1,7 @@
+for i in `seq 1 1 6` ; do
+
+  python3 ../tests/core/test.py ../tests/core/core$i.json
+  cp ../tests/core/core$i.exits ./core$i.exits
+  cp ../tests/core/core$i.sh ./core$i.sh
+  chmod +x core$i.sh
+done;
