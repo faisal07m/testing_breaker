@@ -1,0 +1,61 @@
+{
+  "inputs": [
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-sbank.auth",
+          "-aalice",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "alice"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "alice",
+          "-gcted.card"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "alice",
+          "-gcalice.card"
+        ]
+      },
+      "output": {
+        "output": {
+          "balance": 10,
+          "account": "alice"
+        },
+        "exit": 0
+      }
+    }
+  ]
+}

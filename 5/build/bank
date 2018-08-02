@@ -1,0 +1,18 @@
+#!/bin/bash
+
+for arg in "$@"
+do
+  if [ -z ${arg} ]; then
+    echo "Provided empty argument!" >&2;
+    exit 255;
+  fi
+done
+
+ROOT_DIR=/home/cbruegg/IdeaProjects/bibifi/build
+
+# Copy the jar file to the main directory to ensure the same working directory as the atms
+# Only copy it once to allow multiple executions with the same version (e.g. on different ports)
+if [ ! -f bank-impl.jar ]; then
+	cp "$ROOT_DIR/bank-impl/target/bank-impl.jar" bank-impl.jar
+fi
+java -jar bank-impl.jar $@

@@ -1,0 +1,4 @@
+**/out/
+*.lck
+*.lock
+**/media/

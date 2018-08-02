@@ -1,0 +1,327 @@
+{
+  "inputs": [
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-g"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "2555",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n100.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 63
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "127.0.0.2",
+          "-a",
+          "ted",
+          "-n100.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 63
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n",
+          "9.99"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "-a",
+          "-n",
+          "19.99"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n",
+          "10.0"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n",
+          "10."
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n",
+          "10"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n",
+          "+10.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-n",
+          "10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "ted"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-ga",
+          "ted",
+          "-g"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-ga",
+          "ted"
+        ]
+      },
+      "output": {
+        "output": {
+          "balance": 10,
+          "account": "ted"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aw",
+          "ted",
+          "10.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-w10.01"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-w10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "withdraw": 10,
+          "account": "ted"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-ga",
+          "ted"
+        ]
+      },
+      "output": {
+        "output": {
+          "balance": 0,
+          "account": "ted"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-d0.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a",
+          "ted",
+          "-w0.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+Guideline 5:
+One or more options without option-arguments, followed by at most one option that takes an option-argument, should be accepted when grouped behind one '-' delimiter.
+
+
+TODO:
+ - args -a -a should be wrong (bug in oracle)
+
+Run on VM:
+ - install vm from course website, then type in linux shell:
+
+vboxmanage import vm.ova
+vboxmanage startvm "BiBiFi BuildVm" --type headless
+ssh -p 3022 bibifi@localhost
+scp -r -P 3022 ../BiBiFi_Build/build bibifi@localhost:/home/bibifi/
+
+find python process that reserves the ip:
+ps -fA | grep bank.py
+pkill -f bank.py

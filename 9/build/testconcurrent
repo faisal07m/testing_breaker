@@ -1,0 +1,21 @@
+#!/bin/bash
+echo "Starting ATM concurrent test script, with many ATMS creating accounts at the same time"
+rm *.card
+./atm -a a1 -n 1.00 &
+./atm -a a1 -d 1.00 &
+./atm -a a2 -n 2.00 &
+./atm -a a2 -d 2.00 &
+./atm -a a3 -n 3.00 &
+./atm -a a3 -d 3.00 &
+./atm -a a4 -n 4.00 &
+./atm -a a4 -d 4.00 &
+./atm -a a5 -n 5.00 &
+./atm -a a5 -d 5.00 &
+./atm -a a6 -n 6.00 &
+./atm -a a6 -d 6.00 &
+./atm -a a7 -n 7.00 &
+./atm -a a7 -d 7.00 &
+./atm -a a8 -n 8.00 &
+./atm -a a8 -d 8.00 &
+./atm -a a9 -n 9.00 &
+./atm -a a9 -d 9.00 &

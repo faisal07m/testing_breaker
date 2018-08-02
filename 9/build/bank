@@ -1,0 +1,5 @@
+#!/bin/bash
+THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+# (>&2 echo "starting bash script, executing bank.py ...")
+# rm bank.auth # TODO: delete this line later
+python3 "$THIS_DIR/bank.py" "$@"

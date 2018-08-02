@@ -1,0 +1,149 @@
+{
+  "inputs": [
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aalice",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "alice"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-gi",
+          "1.2.256.4",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-gi",
+          "1.2.255.4.3",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-gi",
+          "%IP%",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {
+          "balance": 10,
+          "account": "alice"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "1023",
+          "-gi",
+          "%IP%",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "65536",
+          "-gi",
+          "%IP%",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "1024",
+          "-gi",
+          "%IP%",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 63
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "65535",
+          "-gi",
+          "%IP%",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 63
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-gi",
+          "%IP%",
+          "-aalice"
+        ]
+      },
+      "output": {
+        "output": {
+          "balance": 10,
+          "account": "alice"
+        },
+        "exit": 0
+      }
+    }
+  ]
+}

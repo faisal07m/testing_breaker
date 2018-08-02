@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#python $(dirname $0)/atm.py "$@"
+
+java -Djava.security.egd=file:/dev/./urandom -jar $(dirname $0)/atm.jar "$@" $PWD
+

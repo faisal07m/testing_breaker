@@ -1,0 +1,32 @@
+[
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.00"],"base64":false},
+    "bank": {"output": {"initial_balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted1", "-n", "4000000000.00"],"base64":false},
+    "bank": {"output": {"initial_balance": 4000000000.0,"account": "ted1"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 4000000000.0,"account": "ted1"}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.00"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output":""}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "jfkdsfkdsdklsfdklsfnslflkdsfdsofkndskflsdnfkldsnfkdsfnsdkfnkfdsnfklsndkldnfkldsnfkldsnfgdklsgndfkslgndflgknfgkldfngkldfgndfklgndfklgndfkgnd", "-n", "10.00"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output":""}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", ".", "-n", "10.00"],"base64":false},
+    "bank": {"output": {"initial_balance": 10.0,"account": "."}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": "."}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "..", "-n", "10.00"],"base64":false},
+    "bank": {"output": {"initial_balance": 10.0,"account": ".."}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": ".."}}
+  }
+]

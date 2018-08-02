@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project default="create_run_jar" name="Create Runnable Jar for Project BIBIFI">
+    <!--this file was created by Eclipse Runnable JAR Export Wizard-->
+    <!--ANT 1.7 is required                                        -->
+    <!--define folder properties-->
+    <property name="dir.buildfile" value="."/>
+    <property name="dir.src" value="./BiBiFi/src"/>
+    <property name="dir.jarfile" value="${dir.buildfile}"/>
+    
+    <target name="clean">
+        <delete dir="tempbuild"/>
+    </target>
+
+    <target name="compile">
+        <mkdir dir="tempbuild/classes"/>
+        <javac srcdir="${dir.src}" destdir="tempbuild/classes">
+        <classpath>
+       		 <pathelement path="${dir.buildfile}/libs/java-json.jar"/>
+       		 <pathelement path="${dir.buildfile}/libs/commons-io-2.6.jar"/>
+       		 <pathelement path="${dir.buildfile}/libs/gson-2.6.2.jar"/>
+   		 </classpath>
+   		 </javac>
+    </target>
+    
+    <target name="create_run_jar">
+        <jar destfile="${dir.jarfile}/Bank.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Manifest-Version" value="1.0"/>
+                <attribute name="Main-Class" value="Bank"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/tempbuild/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/libs/java-json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/libs/commons-io-2.6.jar"/>
+			<zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/libs/gson-2.6.2.jar"/>
+            
+        </jar>
+        <jar destfile="${dir.jarfile}/Atm.jar" filesetmanifest="mergewithoutmain">
+            <manifest>
+                <attribute name="Manifest-Version" value="1.0"/>
+                <attribute name="Main-Class" value="Atm"/>
+                <attribute name="Class-Path" value="."/>
+            </manifest>
+            <fileset dir="${dir.jarfile}/tempbuild/classes"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/libs/java-json.jar"/>
+            <zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/libs/commons-io-2.6.jar"/>
+			<zipfileset excludes="META-INF/*.SF" src="${dir.jarfile}/libs/gson-2.6.2.jar"/>
+        </jar>
+    </target>
+</project>

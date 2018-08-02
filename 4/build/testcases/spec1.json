@@ -1,0 +1,51 @@
+[
+  {
+    "input": {
+      "input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.30"],"base64":false
+    },
+    "bank": {
+      "output": {"initial_balance": 10.3,"account": "ted"}
+    },
+    "atm": {
+      "exit": 0,
+      "output": {"initial_balance": 10.3,"account": "ted"}
+    }
+  },
+  {
+    "input": {
+      "input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-d", "5.00"]
+    },
+    "bank": {
+      "output": {"deposit": 5,"account": "ted"
+      }
+    },
+    "atm": {
+      "exit": 0,
+      "output": {"deposit": 5,"account": "ted"}
+    }
+  },
+  {
+    "input": {
+      "input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-g"]
+    },
+    "bank": {
+      "output": {"balance": 15.3,"account": "ted"}
+    },
+    "atm": {
+      "exit": 0,
+      "output": {"balance": 15.3,"account": "ted"}
+    }
+  },
+  {
+    "input": {
+      "input":["LXA=", "JVBPUlQl", "LWk=", "JUlQJQ==", "LWE=", "dGVk", "LWc="],"base64":true
+    },
+    "bank": {
+      "output": {"balance": 15.3,"account": "ted"}
+    },
+    "atm": {
+      "exit": 0,
+      "output": {"balance": 15.3,"account": "ted"}
+    }
+  }
+]

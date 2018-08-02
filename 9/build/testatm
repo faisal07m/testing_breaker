@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Starting ATM test script"
+rm *.card
+./atm -s bank.auth -c bob.card -a bob -n 1000.00
+./atm -c bob.card -a bob -d 100.00
+./atm -c bob.card -a bob -w 63.10
+./atm -c bob.card -a bob -w 2000.00
+echo $?
+./atm -a bob -n 2000.00
+echo $?
+./atm -a alice -n 1500.00
+./atm -a alice -c bob.card -g
+echo $?

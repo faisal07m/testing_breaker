@@ -1,0 +1,27 @@
+[
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.00" ], "base64":false },
+    "bank": {"output": {"initial_balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted2", "-n", "10.00" ], "base64":false },
+    "bank": {"output": {"initial_balance": 10.0,"account": "ted2"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": "ted2"}}
+  },
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-w", "5.00" ], "base64":false},
+    "bank": {"output": {"withdraw": 5.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"withdraw": 5.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-w", "10.00" ], "base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output":""}
+  },
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-c", "ted2.card", "-w", "1.00" ], "base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output":""}
+  }
+]

@@ -1,0 +1,299 @@
+{
+  "inputs": [
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-adavid",
+          "-n10.00",
+          "-c."
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-adavid",
+          "-n10.00",
+          "-c.."
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-adavid",
+          "-n10.00",
+          "-c..."
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "david"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-adavid",
+          "-d5.00",
+          "-c..."
+        ]
+      },
+      "output": {
+        "output": {
+          "deposit": 5,
+          "account": "david"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aeve",
+          "-n10.00",
+          "-c-c"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "eve"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aeve",
+          "-d5.00",
+          "-c-c"
+        ]
+      },
+      "output": {
+        "output": {
+          "deposit": 5,
+          "account": "eve"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a-a",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "-a"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-gp",
+          "%PORT%",
+          "-gi",
+          "%IP%",
+          "-aeve",
+          "-c-c"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-gp",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aeve",
+          "-c-c"
+        ]
+      },
+      "output": {
+        "output": {
+          "balance": 15,
+          "account": "eve"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a.",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "."
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a..",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": ".."
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aaBc",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-aa!c",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {},
+        "exit": 255
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a-",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "-"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a--",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "--"
+        },
+        "exit": 0
+      }
+    },
+    {
+      "input": {
+        "input": [
+          "-p",
+          "%PORT%",
+          "-i",
+          "%IP%",
+          "-a---",
+          "-n10.00"
+        ]
+      },
+      "output": {
+        "output": {
+          "initial_balance": 10,
+          "account": "---"
+        },
+        "exit": 0
+      }
+    }
+  ]
+}

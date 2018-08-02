@@ -1,0 +1,4 @@
+#!/bin/bash
+THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )"
+# (>&2 echo "starting bash script, executing atm.py ...")
+python3 "$THIS_DIR/atm.py" "$@"

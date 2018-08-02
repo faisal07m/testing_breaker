@@ -1,0 +1,6 @@
+[{"input": {"input": ["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.30"]}, "atm": {"output": {"initial_balance": 10.3, "account": "ted"}, "exit": 0}, "bank": {"output": {"initial_balance": 10.3, "account": "ted"}}},
+{"input": {"input": ["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-g"]}, "atm": {"output": {"account": "ted", "balance": 10.3}, "exit": 0}, "bank": {"output": {"account": "ted", "balance": 10.3}}},
+{"input": {"input": ["-p", "%PORT%", "-i", "%IP%", "-a", "bob", "-n", "19.99"]}, "atm": {"output": {"initial_balance": 19.99, "account": "bob"}, "exit": 0}, "bank": {"output": {"initial_balance": 19.99, "account": "bob"}}},
+{"input": {"input": ["-p", "%PORT%", "-i", "%IP%", "-a", "bob", "-g"]}, "atm": {"output": {"account": "bob", "balance": 19.99}, "exit": 0}, "bank": {"output": {"account": "bob", "balance": 19.99}}},
+{"input": {"input": ["-p", "%PORT%", "-i", "%IP%", "-a", "bob", "-g", "-c", "ted.card"]}, "atm": {"output": "", "exit": 255}, "bank": {"output": ""}},
+{"input": {"input": ["-p", "%PORT%", "-i", "%IP%", "-a", "bob", "-g", "-c", "no.card"]}, "atm": {"output": "", "exit": 255}, "bank": {"output": ""}}]

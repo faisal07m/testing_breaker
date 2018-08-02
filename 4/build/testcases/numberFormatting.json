@@ -1,0 +1,17 @@
+[
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.30"],"base64":false},
+    "bank": {"output": {"initial_balance": 10.3,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.3,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-d", "4564564564564654564565.30"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-w", "100.30"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  }
+]

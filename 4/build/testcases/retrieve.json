@@ -1,0 +1,12 @@
+[
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.00" ], "base64":false },
+    "bank": {"output": {"initial_balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":[ "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-g", "hi" ], "base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  }
+]

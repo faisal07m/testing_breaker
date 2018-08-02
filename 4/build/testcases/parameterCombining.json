@@ -1,0 +1,48 @@
+[
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-n", "10.00"],"base64":false},
+    "bank": {"output": {"initial_balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"initial_balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-ga", "ted"],"base64":false},
+    "bank": {"output": {"balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-gi", "%IP%", "-a", "ted"],"base64":false},
+    "bank": {"output": {"balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-gp", "%PORT%", "-i", "%IP%", "-a", "ted"],"base64":false},
+    "bank": {"output": {"balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-gc", "ted.card", "-p", "%PORT%", "-i", "%IP%", "-a", "ted"],"base64":false},
+    "bank": {"output": {"balance": 10.0,"account": "ted"}},
+    "atm": {"exit": 0, "output": {"balance": 10.0,"account": "ted"}}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-i", "%IP%", "-ga", "ted", "-g"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  },
+  {
+    "input": {"input":["-p", "%PORT%", "-gi", "%IP%", "-a", "ted", "-g"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  },
+  {
+    "input": {"input":["-gp", "%PORT%", "-i", "%IP%", "-a", "ted", "-g"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  },
+  {
+    "input": {"input":["-gc", "ted.card", "-p", "%PORT%", "-i", "%IP%", "-a", "ted", "-g"],"base64":false},
+    "bank": {"output": ""},
+    "atm": {"exit": 255, "output": ""}
+  }
+
+]
