@@ -15,6 +15,7 @@ CLIENT2SERVER = 1
 SERVER2CLIENT = 2
 
 def mitm(buff, direction):
+  print(buff)
   hb = buff
   if direction == CLIENT2SERVER:
     pass
